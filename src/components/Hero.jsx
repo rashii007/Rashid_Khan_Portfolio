@@ -238,7 +238,12 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="animate-float absolute -bottom-5 left-1/2 z-20 w-[85%] max-w-md -translate-x-1/2"
           >
-            <Terminal />
+            <div className="relative isolate z-50">
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/40 via-secondary/30 to-accent/30 blur-[100px]" />
+              <div className="relative">
+                <Terminal />
+              </div>
+            </div>
           </motion.div>
         </div>
 
@@ -255,7 +260,13 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <Terminal />
+
+          <div className="relative isolate z-50">
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20 blur-3xl" />
+            <div className="relative">
+              <Terminal />
+            </div>
+          </div>
         </div>
       </div>
 
