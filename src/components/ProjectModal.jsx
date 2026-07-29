@@ -11,7 +11,9 @@ export default function ProjectModal({ project, onClose }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-[90] flex items-center justify-center bg-black/75 p-4 backdrop-blur-md"
-          onClick={onClose}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) onClose();
+          }}
         >
           <motion.div
             initial={{ opacity: 0, y: 24, scale: 0.97 }}
@@ -19,7 +21,9 @@ export default function ProjectModal({ project, onClose }) {
             exit={{ opacity: 0, y: 16, scale: 0.97 }}
             transition={{ type: "spring", stiffness: 240, damping: 26 }}
             onClick={(e) => e.stopPropagation()}
-            className="glass border-gradient max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-2xl p-8"
+            onWheel={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
+            className="glass border-gradient max-h-[85vh] w-full max-w-2xl !overflow-y-auto rounded-2xl p-8"
           >
             <div className="flex items-start justify-between">
               <div>
