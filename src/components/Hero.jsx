@@ -167,7 +167,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://drive.google.com/file/d/11IRDM5jrsaKVlCMnhsnA6UfwDql-b9Qe/view?usp=drive_link"
+              href="https://docs.google.com/document/d/1QNGq-vAWx8O72ZnxNVXqsAuSeoj1HcNq/edit?usp=drive_link&ouid=117615412981541283699&rtpof=true&sd=true"
               download
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-white/30 hover:bg-white/5"
             >
